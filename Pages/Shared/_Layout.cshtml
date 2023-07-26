@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- ... (other head content) ... -->
+</head>
+<body>
+    <!-- ... (other body content) ... -->
+
+    <div class="container">
+        @if (ViewData["Created"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                Employee successfully created!
+            </div>
+        }
+
+        @RenderBody()
+    </div>
+
+    <!-- ... (other body content) ... -->
+</body>
+</html>
